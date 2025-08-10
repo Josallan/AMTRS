@@ -1,5 +1,15 @@
-# AMTRS
-  Abstract—The music recommendation system featuring a methodology for detecting the user's current emotional state through facial expressions. The methodology proposes taking input from the user, processing it in a MATLAB environment, and then using pre-trained deep learning models such as GoogLeNet.
+AMTRS — Emotion-Based Music Recommendation System
+
+Demo project that detects facial emotion from webcam and opens a Spotify playlist matching the mood.
+
+## Quickstart
+1. Copy `.env.template` to `.env` and fill SPOTIPY_CLIENT_ID / SECRET / REDIRECT.
+2. pip install -r requirements.txt
+3. python src/main.py
+
+If you don't have Spotify credentials, the app will fallback to local playlists found in `data/local_playlists.json`.
+
+
 amtrs-python/
 ├── README.md
 ├── requirements.txt
